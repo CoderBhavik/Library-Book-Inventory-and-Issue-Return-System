@@ -1,0 +1,23 @@
+[
+     {
+          "ID": 1,
+          "title": "think like a gamer",
+          "author": "Bhavik",
+          "total_copies": 10,
+          "available_stock": 8
+     },
+     {
+          "ID": 2,
+          "title": "how to play valo",
+          "author": "Karan",
+          "total_copies": 19,
+          "available_stock": 3
+     },
+     {
+          "ID": 3,
+          "title": "how to be a freind",
+          "author": "Vipul",
+          "total_copies": 13,
+          "available_stock": 5
+     }
+]
