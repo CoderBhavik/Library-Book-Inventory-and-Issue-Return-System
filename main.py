@@ -1,5 +1,7 @@
+from libraryBookInventory.book import libraryInventory
+
 def main():
-    print("Hello from library-book-inventory!")
+    libraryInventory()
 
 
 if __name__ == "__main__":
