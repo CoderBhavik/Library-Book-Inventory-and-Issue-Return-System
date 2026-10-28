@@ -1,0 +1,30 @@
+[
+     {
+          "ID": "B001",
+          "title": "Harry Potter",
+          "author": "J.K. Rowling",
+          "total_copies": 10,
+          "available_stock": 0
+     },
+     {
+          "ID": "B002",
+          "title": "Wings of Fire",
+          "author": "APJ Abdul Kalam and Arun Tiwari",
+          "total_copies": 12,
+          "available_stock": 5
+     },
+     {
+          "ID": "B003",
+          "title": "Rich Dad Poor Dad",
+          "author": "Robert T. Kiyosaki",
+          "total_copies": 9,
+          "available_stock": 7
+     },
+     {
+          "ID": "B004",
+          "title": "Atomic Habits",
+          "author": "James Clear",
+          "total_copies": 15,
+          "available_stock": 10
+     }
+]

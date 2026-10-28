@@ -109,11 +109,14 @@ def return_book(issue_ID: str, book_ID: str, returner_name : str):
             issue_data.remove(data)
             removed = True
 
+    book_returned = False
+
     if removed:
         available_stock_increaser(book_ID, book_inventory) #Increases available stock
 
         return_data.append(return_detail)
-        
+
+        book_returned = True
         with open(returner_detail, 'w') as f:
             json.dump(return_data, f, indent=5)
 
@@ -121,6 +124,8 @@ def return_book(issue_ID: str, book_ID: str, returner_name : str):
             json.dump(issue_data, f, indent=6)
     else:
         print("No data found.")
+
+    return book_returned
 
 
 def libraryInventory():
@@ -172,8 +177,11 @@ def libraryInventory():
             book_id = input("Enter book ID : ")
             returner_name = input("Enter the returner name : ")
 
-            return_book(issue_id, book_id, returner_name)
-            print("Book returned successfully.")
+            book_returned = return_book(issue_id, book_id, returner_name)
+            if book_returned:
+                print("Book returned successfully.")
+            else:
+                print("There's no returner with this name has issued book.")
 
         elif choice == 6:
             print("Exiting....")
